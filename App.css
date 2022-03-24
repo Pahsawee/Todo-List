@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS';
+}
+
+body {
+  background: linear-gradient(180deg, rgb(247, 65, 65), rgb(250, 128, 128));
+}
+
+.todoapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: rgb(9 ,50 ,35);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+header {
+  margin: 32px 0;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.completed {
+  opacity: 0.4;
+}
+
+.todoform {
+  margin-bottom: 32px;
+}
+
+.todoinput {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ffffff;
+  outline: none;
+  width: 320px;
+  background: #fff;
+  color: rgb(0, 0, 0);
+}
+
+.todoinput::placeholder {
+  color: #645f5f;
+}
+
+.todobutton {
+  padding: 12px 16px 18px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background:rgb(2, 173, 74);
+}
+
+.addicons {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.todoinput.edit {
+  border: 2px solid #ffffff;
+}
+
+.todobutton.edit {
+  padding: 13px 16px 19px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background:rgb(2, 173, 74);
+  color: #fff;
+}
+
+.editconfirmicon {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.todocontainer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todobox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background:rgba(255, 118, 20, 1);
+  padding: 16px;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.deleteicon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.editicon {
+  color: #fff;
+}
